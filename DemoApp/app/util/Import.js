@@ -1,4 +1,4 @@
-Ext.define('GetterSetter.util.Import', {
+Ext.define('DemoApp.util.Import', {
     singleton: true,
 
     /**
