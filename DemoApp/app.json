@@ -1,48 +1,51 @@
-/**
-  * List of all JavaScript assets in the right execution order.
-  *
-  * Each item is an object with the following format:
-  *
-  *      {
-  *          // Path to file. If the file is local this must be a relative path from
-  *          // this app.json file.
-  *          //
-  *          "path": "path/to/script.js",   // REQUIRED
-  *
-  *          // Set to true on one file to indicate that it the module should use
-  *          // the default
-  *          //
-  *          "default": false,              // OPTIONAL
-  *
-  *          // Set to true to use the module as a global namespace instead of
-  *          // Ext.imports namespace
-  *          //
-  *          "global": false,               // OPTIONAL
-  *
-  *          // Specify a name to use instead of the ClassName
-  *          //
-  *          "name": undefined,            // OPTIONAL
-  *      }
-  *
-  */
-"modules":[
-    {
-        /* import ClassTest from path */
-        "path"   : "./resources/libs/ImportClass.js",
-        "default": true,
-        "global" : true
-    },
-    {
-        /* import * as MathUtil from path */
-        "path": "./resources/libs/ImportFunktions.js",
-        "name": "MathUtil"
-        /*
-    },
-    {
-        /* import FontAwesome from node_modules */
-        "path"   : "../../node_modules/@fortawesome/fontawesome-free/js/all.js",
-        "default": true,
-        "global" : true,
-        */
-    }
-],
+{
+    "js": [...],
+    /**
+      * List of all JavaScript assets in the right execution order.
+      *
+      * Each item is an object with the following format:
+      *
+      *      {
+      *          // Path to file. If the file is local this must be a relative path from
+      *          // this app.json file.
+      *          //
+      *          "path": "path/to/script.js",   // REQUIRED
+      *
+      *          // Set to true on one file to indicate that it the module should use
+      *          // the default
+      *          //
+      *          "default": false,              // OPTIONAL
+      *
+      *          // Set to true to use the module as a global namespace instead of
+      *          // Ext.imports namespace
+      *          //
+      *          "global": false,               // OPTIONAL
+      *
+      *          // Specify a name to use instead of the ClassName
+      *          //
+      *          "name": undefined,            // OPTIONAL
+      *      }
+      *
+      */
+     "modules":[
+         {
+             /* import ClassTest from path */
+             "path"   : "./resources/libs/ImportClass.js",
+             "default": true,
+             "global" : true
+         },
+         {
+             /* import * as MathUtil from path */
+             "path": "./resources/libs/ImportFunktions.js",
+             "name": "MathUtil"
+             /*
+         },
+         {
+             /* import FontAwesome from node_modules */
+             "path"   : "../../node_modules/@fortawesome/fontawesome-free/js/all.js",
+             "default": true,
+             "global" : true,
+             */
+         }
+     ]
+}
